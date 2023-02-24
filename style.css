@@ -6,6 +6,11 @@
 
 body{
     font: 16px/20px arial,'helvetica','verdana', 'sans-serif';
+    background-image: url(bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 2px black;
 }
 
 .container{
@@ -14,12 +19,11 @@ body{
     width: 350px;
     height: 400px;
     padding: 50px;
-    background-image: linear-gradient(to right, rgb(101, 186, 197), rgb(150, 156, 233));
+    background-color: transparent;
 }
 
 h2{
     text-align: center;
-    color: white;
 }
 
 .input-container input{
@@ -42,7 +46,6 @@ h2{
     top: 50%;
     transform: translateY(-50%);
     left: 5px;
-    color: white;
     pointer-events: none;
     transition: .5s;
 }
@@ -53,7 +56,6 @@ h2{
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    color: white;
 }
 
 input:focus ~ label,
@@ -85,4 +87,8 @@ input:valid ~ label{
 
 .register{
     text-align: center;
+}
+
+.register a{
+    text-shadow: none;
 }
